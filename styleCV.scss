@@ -1,0 +1,137 @@
+@import '_variables';
+
+body {
+    background: rgb(65, 61, 61);
+    color: rgb(53, 53, 52);
+    font-weight: 300;
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  
+  .letter 
+  {
+  color: rgb(11, 11, 141);
+  font-size: 100%;
+  }
+  
+  #head {
+      position: fixed;
+      font: $headerText;
+  }
+
+  .head-menu {
+    display: flex;
+    style {width: 100px; height: 20px;}
+    padding: 1px;
+    border: $border $salmonColor;
+  }
+  
+  .head-exp {
+      background-color: darkolivegreen;
+      font: $headerText;
+      
+  }
+  
+  .head-edu {
+      background-color: darkkhaki;
+      font: $headerText;
+  }
+  
+  .head-SM{
+      background-color: darkgreen;
+      font: $headerText;
+  }
+  
+  .cv {
+      border: $border $salmonColor;
+      box-sizing: $boxSizing;
+      max-width: 80%;
+      padding: 20px;
+      margin: 20px;
+  }
+  
+  img {
+    width: $imgDef;
+    height: $imgDef;
+    border-radius: 50%;
+    transition: width 2s, height 2s, transform 2s;
+    &:hover {
+      width: $imgAnim;
+      height: $imgAnim;
+      transform: rotate(360deg);
+  }
+}
+  .education {
+      margin: 10px;
+      padding: 10px;
+      background-color: rgb(6, 199, 135);
+      border-radius: 10px;
+  }
+  
+  a {
+      text-decoration: none;
+  }
+  
+  a:visited 
+  {
+  color: rgb(10, 10, 10);
+  }
+  
+  a:hover
+  {
+  color:darkgreen;
+  text-decoration: overline;
+  }
+  
+  .groups 
+  {
+      color: rgb(11, 7, 253);
+      text-align: center;
+      letter-spacing: 5px;
+      text-shadow: 2px 2px;
+      text-decoration:line-through;
+      text-decoration-color: rgb(204, 250, 2);
+      text-transform: uppercase;
+      display: inline;
+  }
+  
+  #my-photo
+  {
+      border-radius: 0px;
+  }
+  
+  #inst-img
+  {
+      width: $SMsize;
+      height: $SMsize;
+  }
+  
+  #fb-img
+  {
+      width: $SMsize;
+      height: $SMsize;
+  }
+  
+  #foot {
+      position: fixed;
+      border: $border $salmonColor;
+      box-sizing: $boxSizing;
+      max-width: 80%;
+      padding: 20px;
+      margin: 20px;
+  }
+
+  @media screen and (max-width: 769px) {
+   body {
+    font-size: 10px;
+    font-style: italic;
+   }
+}
+
+@media screen and (min-width: 770px) and (max-width: 1280px) {
+    
+}
+
+@media screen and (min-width: 1281px) {
+    
+}
+}

@@ -1,0 +1,44 @@
+@import '_variables';
+
+body {
+    background-color: rgb(65, 61, 61);
+    color: rgb(53, 53, 52);
+
+    div {
+        text-align: center;
+        border: 5px solid $salmonColor;
+        box-sizing: $boxSizing;
+        max-width: 80%;
+        margin: 100px 100px 100px 100px;
+        background-color: beige;
+        padding: 10PX;
+    }  
+
+    .letter 
+        {
+            color: blue;
+            font-size: 100%;
+        }
+        
+    span {
+        color: rgb(11, 11, 141);
+        font-size: 100%;
+    }
+
+    .btn {
+    display: inline-block;
+    box-sizing: $boxSizing;
+    padding: 10px;
+    margin: 0px 15px 15 px 0px;
+    border: 5px solid;
+    border-radius: 50%;
+    height: 46px;
+    font-size: 14px;
+    color:rgb(250, 248, 248);
+    overflow: hidden;
+    background-color: $salmonColor;
+    &:hover {
+        background-color: #8f4c19;
+    }
+    }
+}
